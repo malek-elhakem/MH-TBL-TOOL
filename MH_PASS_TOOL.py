@@ -1,20 +1,45 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
-from datetime import datetime
+# ==================================================
+# MH PASS TOOL
+# Author : Malek Al-Hakem
+# Use at your own risk!
+# Educational & authorized testing only
+# ==================================================
 
-# =========================
-# Banner
-# =========================
+import os
+import sys
+from itertools import permutations
+
+# ================= Colors =================
+P = "\033[95m"
+R = "\033[91m"
+G = "\033[92m"
+Y = "\033[93m"
+C = "\033[96m"
+W = "\033[0m"
+
+# ================= Banner =================
 def banner():
     os.system("clear")
-    print("""
-========================================
- MH PASS TOOL  - Password Awareness Demo
- Educational Use Only
-========================================
-""")
+    print(P + " __  __  _   _  _____   _____            _       ")
+    print(P + "|  \\/  || | | ||  __ \\ / ____|          | |      ")
+    print(P + "| \\  / || |_| || |__) | |     ___  _ __ | | __   ")
+    print(P + "| |\\/| ||  _  ||  ___/| |    / _ \\| '_ \\| |/ /   ")
+    print(P + "| |  | || | | || |    | |___| (_) | | | |   <    ")
+    print(P + "|_|  |_||_| |_||_|     \\_____\\___/|_| |_|_|\\_\\   ")
+    print(Y + "              MH PASS TOOL v1.0")
+    print(C + "              Author: Malek Al-Hakem\n" + W)
+
+# ================= Warning =================
+def confirm_start():
+    print(R + "[!] WARNING: Use this tool at your own risk!" + W)
+    choice = input(G + "Press Y to continue: " + W).strip().lower()
+    if choice != "y":
+        print(R + "Aborted by user." + W)
+        sys.exit(0)
+
 
 # =========================
 # Franco Converter
