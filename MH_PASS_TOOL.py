@@ -23,14 +23,15 @@ W = "\033[0m"
 # ================= Banner =================
 def banner():
     os.system("clear")
+    print(C + r"""
 ███╗   ███╗ ██╗  ██╗████████╗██████╗ ██╗     
 ████╗ ████║ ██║  ██║╚══██╔══╝██╔══██╗██║     
 ██╔████╔██║ ███████║   ██║   ██████╔╝██║     
 ██║╚██╔╝██║ ██╔══██║   ██║   ██╔══██╗██║     
 ██║ ╚═╝ ██║ ██║  ██║   ██║   ██████╔╝███████╗
 ╚═╝     ╚═╝ ╚═╝  ╚═╝   ╚═╝   ╚═════╝ ╚══════╝
-
-        MH TBL - Security Awareness Tool
+""" + W)
+    print(C + "        MH TBL - Security Awareness Tool" + W)
     print(C + "              Author: Malek Al-Hakem\n" + W)
 
 # ================= Warning =================
@@ -40,6 +41,12 @@ def confirm_start():
     if choice != "y":
         print(R + "Aborted by user." + W)
         sys.exit(0)
+
+# ================= Main =================
+if __name__ == "__main__":
+    banner()
+    confirm_start()
+    print(G + "Tool started successfully..." + W)
 
 
 # =========================
