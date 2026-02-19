@@ -48,7 +48,7 @@ Kali Linux
 
     git clone https://github.com/malek-elhakem/MH-TBL-TOOL.git
 
-    cd MH-TBL-CODE
+    cd MH-TBL-TOOL
 
     chmod +x MH_PASS_TOOL.py
     
@@ -62,7 +62,7 @@ TERMUX
 
     git clone https://github.com/malek-elhakem/MH-TBL-TOOL.git
    
-    cd MH-TBL-CODE
+    cd MH-TBL-TOOL
     
     chmod +x MH_PASS_TOOL.py
     
