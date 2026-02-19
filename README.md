@@ -24,16 +24,16 @@ Git
 Kali Linux
 sudo apt update
 sudo apt install python3 git -y
-git clone https://github.com/elromani1/MH-PASS-TRACK-TOOL.git
-cd MH-TBL-TOOL
+git clone https://github.com/malek-elhakem/MH-TBL-TOOL.git
+cd MH-TBL-CODE
 chmod +x MH_PASS_TOOL.py
 python3 MH_PASS_TOOL.py
 
 TERMUX
 pkg update
 pkg install python git -y
-git clone https://github.com/elromani1/MH-PASS-TRACK-TOOL.git
-cd MH-PASS-TRACK-TOOL
+git clone https://github.com/malek-elhakem/MH-TBL-TOOL.git
+cd MH-TBL-CODE
 chmod +x MH_PASS_TOOL.py
 python MH_PASS_TOOL.py
 
@@ -44,9 +44,13 @@ Passwords will be saved automatically to:
 MH_passwords.txt
 
 📌 Notes
-'''
-    Leave any input empty if unknown
-'
+
+   Leave any input empty if unknown
+
+ More info = stronger wordlist
+
+ Offline tool
+
     More info = stronger wordlist
-'
+
     Offline tool
